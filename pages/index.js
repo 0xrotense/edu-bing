@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CodeWindow from '@/components/CodeWindow';
-import background from '@/public/background.jpg';
-import twitter_image from '@/public/twitter.png';
+import background from '@/public/background.png';
+import X_image from '@/public/twitter.png';
 import Image from 'next/image';
 
 export default function Home() {
@@ -96,8 +96,8 @@ export default function Home() {
   return (
     <div className='flex flex-col items-center justify-center'>
       <Image className='fixed left-0 top-0 w-screen h-screen -z-10' src={background} alt='Background' />
-      <h1 className='font-sans text-5xl justify-center font-bold pt-5 '>EduBing Code Translator</h1>
-      <h2 className="font-sans mt-5 text-xl justify-center text-slate-600 mb-10">Translate your code to another programming language.</h2>
+      <h1 className='font-sans text-5xl justify-center text-white font-bold pt-5 '>EduBing Code Translator</h1>
+      <h2 className="font-sans mt-5 text-2xl justify-center text-white mb-10">Translate your code to another programming language.</h2>
       {/* input code window */}
       <CodeWindow code={inputCode} setCode={setInputCode} loading={loading} handleLanguageChange={handleInputLanguageChange} language={inputLanguage} />
 
@@ -106,8 +106,8 @@ export default function Home() {
 
       {/* output code window */}
       <CodeWindow code={outputCode} setCode={setOutputCode} loading={loading} handleLanguageChange={handleOutputLanguageChange} language={outputLanguage} />
-      <p className="font-sans mt-5 pb-5">Powered by <a className="ref-link text-[#C53AAE]" href="http://metaschool.so/" target="_blank" rel="noopener noreferrer">metaschool 🔮</a></p>
-      <a className=' flex font-sans mb-5 p-1 items-center' href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out this awesome code translator!')}&url=${encodeURIComponent('https://metaschool.so')}`} target="_blank" rel="noopener noreferrer"><Image className='mr-0.5 justify-center' src={twitter_image} alt="Twitter" />Share it on Twitter</a>
+      <p className="font-sans mt-5 pb-5 text-gray-300">Powered by <a className="ref-link text-[#e6cee2]" href="https://github.com/0x0god" target="_blank" rel="noopener noreferrer">GABRIEL MOGAJI R</a></p>
+      <a className=' flex font-sans text-white mb-5 p-1 items-center' href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out this awesome code translator!')}&url=${encodeURIComponent('https://github.com/0x0god')}`} target="_blank" rel="noopener noreferrer"><Image className='mr-0.5 justify-center' src={X_image} alt="Twitter" />Share it on X</a>
     </div>
 
   )

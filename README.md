@@ -10,4 +10,4 @@
 - Go to http://localhost:3000 to test Edu-Bing.
 
 ### TEAM MEMBER
-- GABRIEL MOGAJI 0x0god
+- GABRIEL MOGAJI
